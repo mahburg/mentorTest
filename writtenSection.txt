@@ -1,28 +1,47 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
+Semantic HTML is the use of the HTML tags to indicate the content of the page as opposed to only seperating the content for organizaion and styling.
 
 2. What is the box model?
+The box model is the means by which elements of a web page are encapsulated by retangular containers for organizaion and positioning.
 
 3. What is the difference between IDs and Classes?
+IDs should be unique to the HTML tag while classes can be shared by many HTML tags. Also, IDs have higher precedence in when evaluated compared to classes.
 
 4. What does the z-index do?
+It defines the positioning of overlapping layers (elements) and which layer is rendered "on top." The larger z-index is rendered "on top."
 
 5. Summarize what the keyword 'this' is used for?
+The 'this' keyword is the syntax in JavaScript that accesses the relevant scope of the function in which it is defined. Thereby allowing access to the data defined in the function (usually).
 
 6. What is a callback?
+A callback is a function passed into another function via a parameter and is often invoked by that function.
 
 7. What is a closure?
+A closure is a function returned by another function that, because of lexical scoping, has access to the scope (variables etc..) of the "outter function.
+Thereby giving a methodology of private values and variables in JavaScript. 
 
 8. How does prototype work?
+It is a function that is attached to a data type.
+It allows for functionality to be attached to the data type without that method being rewritten in memory for every instance of the data type.
 
 9. What is MVC?
+It stands for Model, View, Controller. It is a methodology for displaying, organizing, and manipulating a web page.
+Model is the organizaion of the data and the methods for manipulating it.
+View is the portion of the software with which the user interacts.
+Controller is the code that links the Model and the Controller.
 
 10. What is the component lifecycle?
+It is the process by which a component is created, processed, and disposed of in the rendering of a website.
 
 11. What is REST?
+REST stands for Representational State Transfer. It is a set of methodologies and best practices for exchanging data from one program or technology to another.
 
 12. Name three ways of getting data from the URL using express
+Query: key-value pairs defined after a '?' and additional ones after an '&'. example: domain.tld/api/query?key=value&key2=value2
+Params: predifined key-value pairs in URL. Definition example: domain.tld/api/:paramDefinition Use example: domain.tld/api/paramater
+Body: Not actually in the URL. Data in JSON fomat sent in the HTTP request accessable via req.body
 
 create table users (
 id serial,
@@ -33,9 +52,16 @@ email varchar(255)
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
 -Get all users:
+SELECT * FROM users;
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+INSERT INTO users (name, email)
+VALUES ('Lloyd Grubham', 'fake@fake.com');
 
 -Update the newly created user's name to 'Bobby Boy':
+UPDATE users SET name = 'Bobby Boy'
+WHERE email = 'fake@fake.com';
 
 -Delete the newly updated user:
+DELETE FROM users
+WHERE email = 'fake@fake.com';
