@@ -7,7 +7,7 @@ Semantic HTML is the use of the HTML tags to indicate the content of the page as
 The box model is the means by which elements of a web page are encapsulated by retangular containers for organizaion and positioning.
 
 3. What is the difference between IDs and Classes?
-IDs should be unique to the HTML tag while classes can be shared by many HTML tags. Also, IDs have higher precedence in when evaluated compared to classes.
+IDs should be unique to the HTML tag while classes can be shared by many HTML tags. Also, IDs have higher precedence when evaluated compared to classes.
 
 4. What does the z-index do?
 It defines the positioning of overlapping layers (elements) and which layer is rendered "on top." The larger z-index is rendered "on top."
@@ -19,7 +19,7 @@ The 'this' keyword is the syntax in JavaScript that accesses the relevant scope 
 A callback is a function passed into another function via a parameter and is often invoked by that function.
 
 7. What is a closure?
-A closure is a function returned by another function that, because of lexical scoping, has access to the scope (variables etc..) of the "outter function.
+A closure is a function returned by another function that, because of lexical scoping, has access to the scope (variables etc..) of the "outter" function.
 Thereby giving a methodology of private values and variables in JavaScript. 
 
 8. How does prototype work?
